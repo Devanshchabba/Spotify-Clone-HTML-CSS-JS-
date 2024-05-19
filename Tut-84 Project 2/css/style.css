@@ -1,0 +1,411 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+:root {
+    --a:0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    overflow-Y: scroll;
+    scrollbar-width: 0;
+}
+
+.container {
+    margin: 6px;
+    height: 150vh;
+}
+
+.right {
+    width: 75vw;
+    margin-top: 9px;
+    margin-left: 8px;
+    background-color: #1e1e1e;
+
+}
+
+.left {
+    width: 25vw;
+    margin: 8px;
+    padding: 6px;
+    margin-bottom: 20px;
+   
+
+}
+
+.leftContainer {
+    margin: 21px;
+    margin-bottom: 19px;
+}
+
+.close {
+    display: none;
+}
+
+.left ul {
+    margin-left: 8px;
+
+}
+
+.home ul li {
+    display: flex;
+    color: white;
+    gap: 4px;
+    padding: 5px;
+}
+
+.leftBody {
+    background-color: #121212;
+    height: 80vh;
+    margin-top: 7px;
+    padding: 10px 0;
+}
+
+.playlist {
+    width: 30px;
+    padding-left: 20px;
+
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    color: #9c9c9c;
+}
+
+.plus button {
+    border: none;
+    color: #1e1e1e;
+}
+
+.songList {
+    padding: 10px 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.songList ul {
+    scrollbar-width: none;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    max-height: 70vh;
+}
+
+.songList li {
+    list-style-type: decimal;
+    /* border: 2px solid white; */
+    display: flex;
+    max-width: 350px;
+    justify-content: space-between;
+}
+.songList li:hover{
+    background-color: #6b6868;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px;
+}
+
+.playNow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.playNow span {
+    width: 80px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(34 34 34);
+    padding: 25px;
+}
+
+.hamBurger {
+    display: none;
+}
+
+.forward-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.forward-back button {
+    border: none;
+    border-radius: 45px;
+    padding: 4px;
+}
+
+.signin {
+    padding: 10px;
+    background-color: #222222;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 20px;
+}
+.signin:hover{
+    background-color: #414040;
+}
+
+.login {
+    border: none;
+    border-radius: 40px;
+    padding: 17px 35px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.login:hover{
+    background-color: #6b6868;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    margin-top: 29px;
+    gap: 10px;
+    position: absolute;
+    bottom: -325px;
+}
+
+
+.footer div a {
+    text-decoration: underline;
+    color: gray;
+    font-size: small;
+    cursor: pointer;
+}
+
+.card {
+    background-color: #222222;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.card:hover{
+    background-color: #414040;
+    --a:1;
+}
+#greenBtn{
+    position: absolute;
+    right: 20px;
+    top: 150px;
+    transition: all  .7s ease-out;
+    opacity: var(--a);
+}
+
+
+
+.rightContainer {
+    margin: 15px;
+    padding: 5px;
+    width: 30vw;
+    /* border: 2px solid white; */
+    display: grid;
+    gap: 10px;
+    padding-bottom: 33px;
+    
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: auto; */
+    /* background-color: #1e1e1e */
+}
+.right h1{
+  margin-top: 10px;  
+  padding: 10px;
+}
+
+
+.rightContainer img {
+    padding: 10px;
+    border-radius: 15px;
+    object-fit: contain;
+}
+
+
+.playBar {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    background-color: #000;
+    padding: 15px;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 20px;
+    width: 70vw;
+}
+
+.seekBar {
+    height: 5px;
+    margin-top: 10px;
+    width: 96%;
+    background-color: white;
+    position: absolute;
+    bottom: 8px;
+    cursor: pointer;
+
+}
+
+.circle {
+    background-color: rgb(26, 21, 21);
+    border: 2px solid rgb(230, 226, 226);
+    border-radius: 20px;
+    height: 7px;
+    width: 8px;
+    position: relative;
+    left: 0;
+    bottom: 2px;
+    transition: left 0.5s;
+    cursor: pointer;
+}
+
+.aboveControl {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.songInfo {
+    width: 200px;
+    height: 48px;
+}
+
+.controls button {
+    border: none;
+}
+
+.controls button img {
+    height: 30px;
+    padding: 6px;
+}
+
+.timeVol {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.volume {
+    display: flex;
+    gap: 5px;
+}
+.volume input{
+    cursor: pointer;
+}
+   
+
+@media(max-width:1020px) {
+    .left {
+        position: absolute;
+        left: -120%;
+        width: 367px;
+        z-index: 10;
+        height: 100vh;
+        position: fixed;
+        transition: all .3s;
+        
+
+    }
+
+    .rightContainer {
+        grid-template-columns: repeat(3, 1fr);
+        padding-bottom: 33px;
+
+
+        
+    }
+
+    .right {
+        width: 99vw;
+    }
+
+    .playBar {
+        width: 93vw;
+        font-size: 20px;
+    }
+
+    .hamBurger {
+        display: block;
+        margin-right: 10px;
+        padding: 4px;
+        margin-bottom: 5px;
+
+    }
+
+    .close {
+        display: inline;
+        position: absolute;
+
+    }
+
+    .footer {
+        margin-top: 25px;
+        position: relative;
+        bottom: 27px;
+        padding: 30px;
+    }
+
+    .right {
+        margin: 0;
+    }
+}
+
+@media(max-width:760px){
+    .rightContainer {
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 33px;
+
+        
+    }
+}
+@media(max-width:540px) {
+    .rightContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .left {
+        padding: 0;
+    }
+
+    .aboveControl {
+        flex-direction: column;
+        margin-bottom: 206px;
+        /* height: 110px; */
+        /* margin-right: 7px; */
+    }
+
+    .playBar {
+        height: 130px;
+        margin-bottom: -15px;
+    }
+
+    .playlistCards h1 {
+        font-size: x-large;
+        padding: 5px;
+    }
+
+
+}

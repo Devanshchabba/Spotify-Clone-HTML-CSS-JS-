@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+</head>
+
+<body>
+    <div class="container flex">
+        <div class="home  bg-black curve left  ">
+            <div class="leftContainer"><img class="invert" height="40px" src="img/logo.svg" alt="">
+                <img class=" close invert " src="img/close.svg" alt="">
+            </div>
+            <ul>
+                <li><img class="invert" width="30px" height="40px" src="img/home.svg" alt="Home">Home</li>
+                <li><img class="invert" width="30px" height="40px" src="img/search.svg" alt="Search">Search</li>
+            </ul>
+            <div class="leftBody m-4">
+                <div class="heading ">
+                    <div class="heading">
+                        <img src="img/playlist.svg" class="playlist invert" alt="">
+                        <h3>Your library</h3>
+                    </div>
+                    <div class="plus invert"><button><img src="img/plus.svg" width="25px" height="25px" alt=""></button>
+                    </div>
+                </div>
+                <div class="songList">
+                    <ul>
+                        <li>
+                            <img src="" width="40px" class="invert" alt="">
+                            <div class="info">
+                                <div class="songName"></div>
+                                <div class="singer"></div>
+                            </div>
+                            <div class="playNow">
+                                <span></span>
+                                <img src="" width="40px" class="invert" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer">
+                <div><a href="https://www.spotify.com/in-en/legal/">Legal</a></div>
+                <div><a href="https://www.spotify.com/in-en/safetyandprivacy/">Safety & Privacy</a></div>
+                <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a></div>
+                <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a></div>
+                <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a></div>
+                <div><a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a></div>
+            </div>
+        </div>
+        <div class="right bg-black  curve">
+            <div class="nav curve">
+                <div class=" forward-back invert ">
+                    <img class="hamBurger " src="img/hamBurger.svg" alt="">
+                    <img src="img/backward.svg " class="invert " alt="">
+                    <img src="img/forward.svg" class="invert " alt="">
+                </div>
+                <div class="buttons">
+                    <button class="signin">Sign up</button>
+                    <button class="login">Log in</button>
+                </div>
+            </div>
+
+
+            <h1>Spotify playlists</h1>
+            <div class="rightContainer">
+            </div>
+
+
+
+            <div class="playBar">
+
+                <div class="seekBar">
+                    <div class="circle"></div>
+                </div>
+                <div class="aboveControl">
+                    <div class="songInfo">Song info
+
+                    </div>
+
+                    <div class="controls invert">
+                        <button><img id="previous" src="img/prevsong.svg" alt="Previous"></button>
+                        <button><img id="play" src="img/pause.svg" alt="Pause"></button>
+                        <button><img id="next" src="img/nextsong.svg" alt="Next"></button>
+                    </div>
+
+                    <div class="timeVol">
+                        <div class="time">00:00/00:00</div>
+                        <div class="volume">
+                            <img class="invert" src="img/volume.svg" alt="">
+                            <input type="range">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
